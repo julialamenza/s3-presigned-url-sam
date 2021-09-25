@@ -30,7 +30,7 @@ sam deploy --guided
 ```
 
 When prompted for parameters, enter:
-- Stack Name: <your stack name>
+- Stack Name: your stack name
 - AWS Region: your preferred AWS Region (e.g. us-east-1)
 - Accept all other defaults.
 
@@ -43,19 +43,19 @@ This takes several minutes to deploy. At the end of the deployment, note the out
 
 ### Testing with postman
 
-1- First, copy the API endpoint from the output of the deployment.
-2- In the Postman interface, paste the API endpoint into the box labeled Enter request URL.
+1- First, copy the API endpoint from the output of the deployment. <br>
+2- In the Postman interface, paste the API endpoint into the box labeled Enter request URL. <br>
 3- Choose Send.
 
 ![image1](.github/images/image1.png)
 
 4- After the request is complete, the Body section shows a JSON response. The uploadURL attribute 
-contains the signed URL. Click on this attribute to the clipboard.
-5- Will open a new tab
-6- Using the dropdown, change the method from GET to PUT. 
-7- Choose the Body tab, then the binary radio button.
-8- Choose Select file and choose a JPG file to upload.
-9- Choose Send. You see a 200 OK response after the file is uploaded.
+contains the signed URL. Click on this attribute to the clipboard. <br>
+5- Will open a new tab <br>
+6- Using the dropdown, change the method from GET to PUT. <br>
+7- Choose the Body tab, then the binary radio button.<br>
+8- Choose Select file and choose a JPG file to upload.<br>
+9- Choose Send. You see a 200 OK response after the file is uploaded.<br>
 10 -Navigate to the S3 console, and open the S3 bucket created by the deployment. In the bucket, you see the JPG file uploaded via Postman.
 
 ### Deleting your Stack

@@ -61,7 +61,6 @@ contains the signed URL. Click on this attribute to the clipboard. <br>
 ### Deleting your Stack
 Make sure that your bucket is empty
 Run
-'''
+```
 sam delete
-'''
-
+```
